@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz de Derecho Penal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Preguntas de Derecho Penal</h1>
+        
+        <div id="menu-container">
+            <button class="difficulty-btn" onclick="startQuiz(1)">Dificultad 1: Básica</button>
+            <button class="difficulty-btn" onclick="startQuiz(2)">Dificultad 2: Intermedia</button>
+            <button class="difficulty-btn" onclick="startQuiz(3)">Dificultad 3: Avanzada</button>
+        </div>
+
+        <div id="quiz-container" style="display: none;">
+            <div id="question-container"></div>
+            
+            <div id="controls">
+                <button id="prev-btn">Anterior</button>
+                <button id="hint-btn">Pista</button>
+                <button id="next-btn">Siguiente</button>
+            </div>
+
+            <div id="feedback"></div>
+            <div id="explanation" style="display: none;"></div>
+            
+            <button id="back-btn" onclick="goBack()">Regresar al Menú</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
